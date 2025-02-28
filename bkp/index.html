@@ -6,23 +6,38 @@
     <meta name="description" content="CV de Glauber Carlos. Desenhador e Projetista de produtos de telecomunicações">
     <meta name="keywords" content="desenho, projeto, solidworks, telecomunicações, renders 3D, impressão 3D">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/curriculum.css">
 </head>
     <style>
 
         body {
             width: 800px;
             margin: auto;
+            font-family:'Times New Roman';
         }
    
         header {
-            border: 2px solid rgb(32, 94, 209);
-            color: #2c2c2c;
+            /* border: 2px solid rgb(32, 94, 209); */
+            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
+            color: #3d3c47;
             text-align: center;
+        }
+        
+        .cargoLocal {
+            padding: 0 35px 15px;
+            font-size: 18pt;
+            text-align: center;
+            /* border: 2px solid rgb(32, 94, 209); */
         }
 
         .titulos {
             text-align: center;
-            border: 2px solid rgb(32, 94, 209);
+            padding: 5px 0 15px;
+            font-family:Verdana;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #3d3c47;
         }
         .nome-links {
             display: flex;
@@ -33,7 +48,7 @@
             justify-content: center;
             width: 50%;
             height: 300px;
-            border: 2px solid rgb(32, 94, 209);
+            /* border: 2px solid rgb(32, 94, 209); */
             align-items: center;
             box-sizing: border-box;
         }
@@ -42,7 +57,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             width: 50%;
-            border: 2px solid rgb(32, 94, 209);
+            /* border: 2px solid rgb(32, 94, 209); */
             font-weight: bold;
             padding: 70px 30px;
         }
@@ -69,21 +84,36 @@
             text-decoration: none;
         }
 
+        #glauberimg {
+            box-shadow: 4px 4px #c4c4c4;
+            border-radius: 3px;
+        }
+
         aside {
-            padding: 10px 30px ;
+            background: linear-gradient(to bottom, #ffffff, #f5f6fa);
+            padding-bottom: 10px;
             font-size: 14pt;
             font-style: italic;
             text-align: justify;
+            color: #5a5a5a;
         }
-
+        
+        .asidetext {
+            padding: 0 60px;
+            font-size: 13pt;
+            font-style: italic;
+            text-align: justify;
+        }
         .form-certif {
             display: flex;
+            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
+            border-top: 2px solid #dadada;
         }
                 
         .form {
             display: flex;
-            width: 40%;
-            border: 2px solid rgb(32, 94, 209);
+            width: 50%;
+            color: #5a5a5a;
             flex-direction: column;
             box-sizing: border-box;
             padding: 20px 30px;
@@ -92,26 +122,54 @@
         .certif {
             display: flex;
             flex-direction: column;
-            width: 60%;
-            border: 2px solid rgb(32, 94, 209);
+            width: 50%;
+            color: #5a5a5a;
             text-align: left;
             box-sizing: border-box;
             padding: 20px 30px;
         }
-        
-        .competencias {
-            display: flex;
-            flex-direction: column;
-            border: 2px solid rgb(32, 94, 209);
-            text-align: left;
-            box-sizing: border-box;
-            padding: 20px 30px;
-        }
+
         .experiencia {
-            border: 2px solid rgb(17, 116, 33);
+            border-top: 2px solid #dadada;
+            background: linear-gradient(to bottom, #ffffff, #f5f6fa);
             box-sizing: border-box;
             padding: 20px;
-            border: 2px solid rgb(32, 94, 209);
+            /* border: 2px solid rgb(32, 94, 209); */
+        }
+                
+        .tarefas {
+            box-sizing: border-box;
+            padding: 0px 35px 50px;
+            color: #5a5a5a;
+        }
+
+        .competencias {
+            border-top: 2px solid #dadada;
+            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
+            display: flex;
+
+        }
+        
+        .competenciasL {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            /* border: 2px solid rgb(32, 94, 209); */
+            text-align: left;
+            color: #5a5a5a;
+            box-sizing: border-box;
+            padding: 0px 30px 50px;
+        }
+        
+        .competenciasD {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            /* border: 2px solid rgb(32, 94, 209); */
+            text-align: left;
+            color: #5a5a5a;
+            box-sizing: border-box;
+            padding: 0px 30px 50px;
         }
         
         .alignLR {
@@ -123,31 +181,18 @@
             text-align: right;
         }
 
-        .cargoLocal {
-            padding: 0 20px 15px;
-            font-weight: bold;
-            font-size: large;
-        }
-
-        .tarefas {
-            box-sizing: border-box;
-            padding: 0px 35px 50px;
-            text-align: justify;
-        }
     </style>
 <body>
     <header>
-            <h1>Glauber da Silva Carlos</h1>
-            <div class="alignLR cargoLocal">
-                Desenhador e Projetista 3D
-                <div class="align-right">
-                    Odivelas - Portugal
-                </div>
+            <h1><br>Glauber da Silva Carlos</h1>
+            <div class="cargoLocal">
+                <strong>Desenhador e Projetista 3D</strong>
+                <br>Odivelas - Portugal
             </div>
     </header>
     <div class="nome-links">
         <div class="perfil">
-            <img src="glauber.jpg" width="200px" alt="Foto do Glauber" title="Glauber">
+            <img src="glauber.jpg" width="200px" alt="Foto do Glauber" title="Glauber" id="glauberimg">
         </div>
         <div class="links">
                 <ul>    
@@ -161,12 +206,12 @@
     </div>
 
     <aside>
-        <h3 class="titulos">Sobre mim</h3>
-            <p>
+        <h3 class="titulos" style="font-style: normal">Sobre mim</h3>
+            <p class="asidetext">
                 Sou um projetista de produtos para o setor de telecomunicações, com mais de 10 anos de experiência em design 3D e programação CAD/CAM. 
                 Atualmente, trabalho na Yelco, uma empresa portuguesa que desenvolve soluções personalizadas indoor e outdoor para os seus clientes.
             </p>
-            <p>
+            <p class="asidetext">
                 Na Yelco, utilizo o software Solidworks para criar modelos 3D, estudos de injeção de plásticos e simulações de produtos, além de operar impressoras 3D de tecnologias FDM e SLA para prototipagem e testes. Também faço renderizações de imagens e vídeos dos produtos com o software Blender, e apoio o departamento de marketing na produção de conteúdos visuais. 
                 Sou apaixonado por desenvolvimento de projetos, inovação e tecnologia, e busco sempre aprimorar as minhas habilidades e conhecimentos. Possuo as certificações CSWP - Solidworks.
             </p>
@@ -177,15 +222,15 @@
             <div class="form">
                 <h3 class="titulos">Formação acadêmica</h3>
                 <p><strong>SENAI - Centro Integrado de Desenvolvimento do Trabalhador Luiz Adelar Scheuer</strong></p>
-                <p>Ensino Técnico, Mecatrônica, Robótica e Engenharia de Controle e Automação<br><br>
-                <i>Modelagem 3D, CAD, CAM, CNC, Metalurgia e Mecânica</i></p>
-                <p><br>Juiz de Fora - MG<br> 09/2008 a 03/2010</p>                
+                <p><i>Ensino Técnico, Mecatrônica, Robótica e Engenharia de Controle e Automação<br><br>
+                Modelagem 3D, CAD, CAM, CNC, Metalurgia e Mecânica</i></p>
+                <p><br>09/2008 a 03/2010<br>Juiz de Fora - MG</p>                
             </div>
             <div class="certif">
                 <h3 class="titulos">Certificados</h3>
                 <div>
-                    <p><strong>Mechanical Design at the level of PROFESSIONAL (CSWP)</strong><br>SolidWorks</p>
-                    <p><strong>Sheet Metal at the level of PROFESSIONAL (CSWP)</strong><br>SolidWorks</p>
+                    <p><strong>Mechanical Design PROFESSIONAL (CSWP)</strong><br>SolidWorks</p>
+                    <p><strong>Sheet Metal PROFESSIONAL (CSWP)</strong><br>SolidWorks</p>
                     <p><strong>SolidWorks Plastics Simulation</strong><br>Sqédio</p>
                     <p><strong>SolidWorks Motion Simulation</strong><br>Sqédio</p>
                     <p><strong>Fundamentos do Scrum</strong><br>LinkedIn</p>
@@ -201,13 +246,13 @@
                 <span class="align-right">Odivelas, Portugal<br>06/2020 - Atualmente</span></div>        
             <div class="tarefas">
                 <br>
-                Projetos de produtos personalizados para o setor de Telecomunicações.
+                ◦ Projetos de produtos personalizados para o setor de Telecomunicações.
                 <br>
-                Desenvolvimento de desenhos 3D, estudos de injeções de plásticos para moldes e simulações feitos com o software Solidworks.
+                ◦ Desenvolvimento de desenhos 3D, estudos de injeções de plásticos para moldes e simulações feitos com o software Solidworks.
                 <br>
-                Operação em impressoras 3D de tecnologias FDM e SLA para prototipagem e produtos finais.
+                ◦ Operação em impressoras 3D de tecnologias FDM e SLA para prototipagem e produtos finais.
                 <br>
-                Renders de imagens e vídeos de produtos para manuais, datasheets, publicidade e suporte ao departamento de Marketing, feitos em softwares como Blender, Inkscape e DaVinci Resolve.
+                ◦ Renders de imagens e vídeos de produtos para manuais, datasheets, publicidade e suporte ao departamento de Marketing, feitos em softwares como Blender, Inkscape e DaVinci Resolve.
             </div>
             
             <div class="alignLR">
@@ -215,7 +260,7 @@
                 <span class="align-right">Amadora, Portugal<br>03/2020 - 06/2020</span></div>        
             <div class="tarefas">
                 <br>
-                Planejamento para distribuição e ligações de fibra óptica em França com softwares QGIS, AutoCAD, Excel e Google Earth.
+                ◦ Planejamento para distribuição e ligações de fibra óptica em França com softwares QGIS, AutoCAD, Excel e Google Earth.
             </div>
                 
             <div class="alignLR">
@@ -223,13 +268,13 @@
                 <span class="align-right">Juiz de Fora - MG, Brasil<br>01/2014 - 12/2019</span></div>        
             <div class="tarefas">
                 <br>
-                Gerenciamento do departamento de projetos.
+                ◦ Gerenciamento do departamento de projetos.
                 <br>
-                Desenvolvimento 2D/3D de projetos metalomecânicos.
+                ◦ Desenvolvimento 2D/3D de projetos metalomecânicos.
                 <br>
-                Programação para equipamentos de Corte a Laser CNC, quinagem CNC e solda com o software SigmaNest.
+                ◦ Programação para equipamentos de Corte a Laser CNC, quinagem CNC e solda com o software SigmaNest.
                 <br>
-                Desenhos em CorelDraw para gravações a ácido em baixo relevo.
+                ◦ Desenhos em CorelDraw para gravações a ácido em baixo relevo.
             </div>
 
             <div class="alignLR">
@@ -237,44 +282,48 @@
                 <span class="align-right">Juiz de Fora - MG, Brasil<br>01/2011 - 06/2013</span></div>        
             <div class="tarefas">
                 <br>
-                Desenvolvimento 2D/3D de projetos metalomecânicos.
+                ◦ Desenvolvimento 2D/3D de projetos metalomecânicos.
                 <br>
-                Programação 2D para equipamentos de Corte a Laser CNC com os softwares BySoft e AutoCad.
+                ◦ Programação 2D para equipamentos de Corte a Laser CNC com os softwares BySoft e AutoCad.
             </div>
         </div>
         
         <div class="competencias">
-            <div>
-                <h3 class="titulos">Competências Linguísticas</h3>
-                <ul>
-                    <li><strong>Português</strong><br>Nativo</li>
-                    <li><strong>Inglês</strong><br>A2</li>
-                </ul>
+            <div class="competenciasL">
+                <div>
+                    <h3 class="titulos">Competências Linguísticas</h3>
+                    <ul>
+                        <li><strong>Português</strong><br>Nativo</li>
+                        <li><strong>Inglês</strong><br>A2</li>
+                    </ul>
+                </div>
             </div>
-            <h3 class="titulos">Competências Digitais Gerais</h3>
-            <div>
-                <p><strong>MS Windows e MS Office</strong>
-                <br>Sis. Operacional e Softwares de Escritório</p>
-                <p><strong>Solidworks</strong>
-                <br>Software CAD 3D</p>
-                <p><strong>AutoCAD</strong>
-                <br>Software CAD 2D</p>
-                <p><strong>Blender</strong>
-                <br>Renderizações, Edições de Vídeo e CAD 3D</p>
-                <p><strong>Ideamaker / Creality Slicer / Simplify 3D</strong>
-                <br>Fatiadores de Impressão 3D FDM</p>
-                <p><strong>PreForm / Lychee Slicer</strong>
-                <br>Fatiadores de Impressão 3D SLA</p>
-                <p><strong>Inkscape</strong>
-                <br>Software de Edição de Imagem Vetorial</p>
-                <p><strong>Adobe Lightroom & Photoshop</strong>
-                <br>Softwares de Edição de Imagens</p>
-                <p><strong>DaVinci Resolve</strong>
-                <br>Softwares de Edição de Vídeos</p>
-                <p><strong>EZCAD</strong>
-                <br>Software de Gravação a laser</p>
+            <div class="competenciasD">
+                <h3 class="titulos">Competências Digitais Gerais</h3>
+                <div>
+                    <p><strong>MS Windows e MS Office</strong>
+                    <br>Sis. Operacional e Softwares de Escritório</p>
+                    <p><strong>Solidworks</strong>
+                    <br>Software CAD 3D</p>
+                    <p><strong>AutoCAD</strong>
+                    <br>Software CAD 2D</p>
+                    <p><strong>Blender</strong>
+                    <br>Renderizações, Edições de Vídeo e CAD 3D</p>
+                    <p><strong>Ideamaker / Creality Slicer / Simplify 3D</strong>
+                    <br>Fatiadores de Impressão 3D FDM</p>
+                    <p><strong>PreForm / Lychee Slicer</strong>
+                    <br>Fatiadores de Impressão 3D SLA</p>
+                    <p><strong>Inkscape</strong>
+                    <br>Software de Edição de Imagem Vetorial</p>
+                    <p><strong>Adobe Lightroom & Photoshop</strong>
+                    <br>Softwares de Edição de Imagens</p>
+                    <p><strong>DaVinci Resolve</strong>
+                    <br>Softwares de Edição de Vídeos</p>
+                    <p><strong>EZCAD</strong>
+                    <br>Software de Gravação a laser</p>
+                </div>
             </div>
-        </div>
+        </div>    
     </main>
 </body>
 </html>

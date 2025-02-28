@@ -6,180 +6,10 @@
     <meta name="description" content="CV de Glauber Carlos. Desenhador e Projetista de produtos de telecomunicações">
     <meta name="keywords" content="desenho, projeto, solidworks, telecomunicações, renders 3D, impressão 3D">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/curriculum.css">
 </head>
-    <style>
 
-        body {
-            width: 800px;
-            margin: auto;
-            font-family:'Times New Roman';
-        }
-   
-        header {
-            /* border: 2px solid rgb(32, 94, 209); */
-            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
-            color: #3d3c47;
-            text-align: center;
-        }
-        
-        .cargoLocal {
-            padding: 0 35px 15px;
-            font-size: 18pt;
-            text-align: center;
-            /* border: 2px solid rgb(32, 94, 209); */
-        }
-
-        .titulos {
-            text-align: center;
-            padding: 5px 0 15px;
-            font-family:Verdana;
-            font-size: 16pt;
-            font-weight: bold;
-            color: #3d3c47;
-        }
-        .nome-links {
-            display: flex;
-        }
-                
-        .perfil {
-            display: flex;
-            justify-content: center;
-            width: 50%;
-            height: 300px;
-            /* border: 2px solid rgb(32, 94, 209); */
-            align-items: center;
-            box-sizing: border-box;
-        }
-                
-        .links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 50%;
-            /* border: 2px solid rgb(32, 94, 209); */
-            font-weight: bold;
-            padding: 70px 30px;
-        }
-
-        ul {
-            list-style: none;
-            display: contents;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            padding: 5px 0;
-        }
-
-        a {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        a:link, a:visited{
-            color: #2c2c2c;
-            text-decoration: none;
-        }
-
-        #glauberimg {
-            box-shadow: 4px 4px #c4c4c4;
-            border-radius: 3px;
-        }
-
-        aside {
-            background: linear-gradient(to bottom, #ffffff, #f5f6fa);
-            padding-bottom: 10px;
-            font-size: 14pt;
-            font-style: italic;
-            text-align: justify;
-            color: #5a5a5a;
-        }
-        
-        .asidetext {
-            padding: 0 60px;
-            font-size: 13pt;
-            font-style: italic;
-            text-align: justify;
-        }
-        .form-certif {
-            display: flex;
-            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
-            border-top: 2px solid #dadada;
-        }
-                
-        .form {
-            display: flex;
-            width: 50%;
-            color: #5a5a5a;
-            flex-direction: column;
-            box-sizing: border-box;
-            padding: 20px 30px;
-        }
-                
-        .certif {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            color: #5a5a5a;
-            text-align: left;
-            box-sizing: border-box;
-            padding: 20px 30px;
-        }
-
-        .experiencia {
-            border-top: 2px solid #dadada;
-            background: linear-gradient(to bottom, #ffffff, #f5f6fa);
-            box-sizing: border-box;
-            padding: 20px;
-            /* border: 2px solid rgb(32, 94, 209); */
-        }
-                
-        .tarefas {
-            box-sizing: border-box;
-            padding: 0px 35px 50px;
-            color: #5a5a5a;
-        }
-
-        .competencias {
-            border-top: 2px solid #dadada;
-            background: linear-gradient(to bottom, #f5f6fa, #ffffff);
-            display: flex;
-
-        }
-        
-        .competenciasL {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            /* border: 2px solid rgb(32, 94, 209); */
-            text-align: left;
-            color: #5a5a5a;
-            box-sizing: border-box;
-            padding: 0px 30px 50px;
-        }
-        
-        .competenciasD {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            /* border: 2px solid rgb(32, 94, 209); */
-            text-align: left;
-            color: #5a5a5a;
-            box-sizing: border-box;
-            padding: 0px 30px 50px;
-        }
-        
-        .alignLR {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .align-right{
-            text-align: right;
-        }
-
-    </style>
 <body>
     <header>
             <h1><br>Glauber da Silva Carlos</h1>
@@ -190,15 +20,21 @@
     </header>
     <div class="nome-links">
         <div class="perfil">
-            <img src="glauber.jpg" width="200px" alt="Foto do Glauber" title="Glauber" id="glauberimg">
+            <button popovertarget="imagem-ampliada" class="img-reduzida">
+                <img src="images/glauber.jpg" width="200px" alt="Foto do Glauber" title="Clique para ampliar" id="glauberimg">
+            </button>            
+            <div id="imagem-ampliada" popover class="img-ampliada">
+                <img src="images/glauber.jpg" width="650px">
+            </div>
         </div>
+
         <div class="links">
                 <ul>    
-                    <li><a href="mailto:glaubersilvacarlos@hotmail.com"><img src="envelope-solid.svg" width="25px">E-mail</a></li>
-                    <li><a href="https://wa.me/351913194116" target="_blank"><img src="whatsapp-brands-solid.svg" width="25px">WhatsApp</a></li>
-                    <li><a href="https://www.linkedin.com/in/glaubercarlos" target="_blank"><img src="linkedin-brands-solid.svg" width="25px">LinkedIn</a></li>
-                    <li><a href="https://www.behance.net/glauber_arte" target="_blank"><img src="square-behance-brands-solid.svg" width="25px">Behance</a></li>
-                    <li><a href="https://www.instagram.com/glauber.arte" target="_blank"><img src="instagram-brands-solid.svg" width="25px">Instagram</a></li>
+                    <li><a href="mailto:glaubersilvacarlos@hotmail.com"><img src="images/envelope-solid.svg" width="25px">E-mail</a></li>
+                    <li><a href="https://wa.me/351913194116" target="_blank"><img src="images/whatsapp-brands-solid.svg" width="25px">WhatsApp</a></li>
+                    <li><a href="https://www.linkedin.com/in/glaubercarlos" target="_blank"><img src="images/linkedin-brands-solid.svg" width="25px">LinkedIn</a></li>
+                    <li><a href="https://www.behance.net/glauber_arte" target="_blank"><img src="images/square-behance-brands-solid.svg" width="25px">Behance</a></li>
+                    <li><a href="https://www.instagram.com/glauber.arte" target="_blank"><img src="images/instagram-brands-solid.svg" width="25px">Instagram</a></li>
                 </ul>
         </div>
     </div>
@@ -218,11 +54,32 @@
     <main>
         <div class="form-certif">
             <div class="form">
-                <h3 class="titulos">Formação acadêmica</h3>
-                <p><strong>SENAI - Centro Integrado de Desenvolvimento do Trabalhador Luiz Adelar Scheuer</strong></p>
-                <p><i>Ensino Técnico, Mecatrônica, Robótica e Engenharia de Controle e Automação<br><br>
-                Modelagem 3D, CAD, CAM, CNC, Metalurgia e Mecânica</i></p>
-                <p><br>09/2008 a 03/2010<br>Juiz de Fora - MG</p>                
+                <button popovertarget="form-ampliada" class="form-reduzida">
+                    <h3 class="titulos">Formação acadêmica</h3>
+                    <p><strong>SENAI - Centro Integrado de Desenvolvimento do Trabalhador Luiz Adelar Scheuer</strong></p>
+                    <p><i>Ensino Técnico, Mecatrônica, Robótica e Engenharia de Controle e Automação<br><br>
+                    Modelagem 3D, CAD, CAM, CNC, Metalurgia e Mecânica</i></p>
+                    <p><br>09/2008 a 03/2010<br>Juiz de Fora - MG</p>        
+                </button>
+                <div id="form-ampliada" popover class="form-ampliada">
+                    <h2 class="titulos">SENAI CIDT - Luiz Adelar Scheuer</h2>
+                    <h3>Juiz de Fora (MG) - Brasil</h3>
+                    <img src="images/senai.jpg" width="680px">
+                    <h4>Cursos oferecidos</h4>
+                        Controle de Qualidade<br>
+                        Instalação Elétrica Predial<br>
+                        Manutenção Eletromecânica<br>
+                        Manutenção Mecânica de Máquinas Industriais<br>
+                        Mecânica Diesel<br>
+                        Montador de Estruturas Metálicas<br>
+                        Operador de Máquinas de Produtos Farmacêuticos<br>
+                        Processos Siderúrgicos<br>
+                        Reparação de Carrocerias de Veículos<br>
+                        Fabricação Mecânica<br>
+                        Mecatrônica<br>
+                        Qualidade Industrial<br>             
+                </div>
+                
             </div>
             <div class="certif">
                 <h3 class="titulos">Certificados</h3>
@@ -286,42 +143,74 @@
             </div>
         </div>
         
+        <div>
+            <h3 class="titulos competenciasT">Competências Digitais Gerais</h3>      
+        </div>          
         <div class="competencias">
             <div class="competenciasL">
-                <div>
-                    <h3 class="titulos">Competências Linguísticas</h3>
-                    <ul>
-                        <li><strong>Português</strong><br>Nativo</li>
-                        <li><strong>Inglês</strong><br>A2</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="competenciasD">
-                <h3 class="titulos">Competências Digitais Gerais</h3>
-                <div>
                     <p><strong>MS Windows e MS Office</strong>
                     <br>Sis. Operacional e Softwares de Escritório</p>
+                    <div class="barrinha">
+                        <div class="barr-office"></div>
+                    </div>
                     <p><strong>Solidworks</strong>
                     <br>Software CAD 3D</p>
+                    <div class="barrinha">
+                        <div class="barr-sw"></div>
+                    </div>
                     <p><strong>AutoCAD</strong>
                     <br>Software CAD 2D</p>
+                    <div class="barrinha">
+                        <div class="barr-cad"></div>
+                    </div>
                     <p><strong>Blender</strong>
                     <br>Renderizações, Edições de Vídeo e CAD 3D</p>
+                    <div class="barrinha">
+                        <div class="barr-blender"></div>
+                    </div>
                     <p><strong>Ideamaker / Creality Slicer / Simplify 3D</strong>
                     <br>Fatiadores de Impressão 3D FDM</p>
+                    <div class="barrinha">
+                        <div class="barr-fdm"></div>
+                    </div>
+            </div>
+            <div class="competenciasR">
                     <p><strong>PreForm / Lychee Slicer</strong>
                     <br>Fatiadores de Impressão 3D SLA</p>
+                    <div class="barrinha">
+                        <div class="barr-sla"></div>
+                    </div>
                     <p><strong>Inkscape</strong>
                     <br>Software de Edição de Imagem Vetorial</p>
+                    <div class="barrinha">
+                        <div class="barr-inkscape"></div>
+                    </div>
                     <p><strong>Adobe Lightroom & Photoshop</strong>
                     <br>Softwares de Edição de Imagens</p>
+                    <div class="barrinha">
+                        <div class="barr-ps"></div>
+                    </div>
                     <p><strong>DaVinci Resolve</strong>
                     <br>Softwares de Edição de Vídeos</p>
+                    <div class="barrinha">
+                        <div class="barr-resolve"></div>
+                    </div>
                     <p><strong>EZCAD</strong>
                     <br>Software de Gravação a laser</p>
+                    <div class="barrinha">
+                        <div class="barr-ezcad"></div>
+                    </div>
                 </div>
+        </div>
+        <div class="competenciasLingua">
+            <div>
+                <h3 class="titulos">Competências Linguísticas</h3>
+                <ul>
+                    <li><strong>Português</strong><br>Nativo</li>
+                    <li><strong>Inglês</strong><br>A2</li>
+                </ul>
             </div>
-        </div>    
+        </div>         
     </main>
 </body>
 </html>
