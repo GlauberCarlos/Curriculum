@@ -135,7 +135,8 @@ aside {
 
 .form-ampliada::backdrop {
     background-color: #2c2c2c7b;
-}        
+} 
+
 .certif {
     display: flex;
     flex-direction: column;
@@ -146,6 +147,22 @@ aside {
     padding: 20px 30px;
 }
 
+.certif-reduzida {
+    all: unset;
+    cursor: pointer;
+}
+
+.certif-ampliada {
+    background-color: transparent;
+    padding: 15px 45px 30px;
+    border: 0 solid;
+    border-radius: 5px;
+}
+
+.certif-ampliada::backdrop {
+    background-color: #2c2c2c7b;
+} 
+ 
 .experiencia {
     border-top: 2px solid #dadada;
     background: linear-gradient(to bottom, #ffffff, #f5f6fa);
